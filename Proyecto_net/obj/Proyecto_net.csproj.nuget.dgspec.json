@@ -1,0 +1,118 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/jersson/Projects/bookeat/Proyecto_net/Proyecto_net/Proyecto_net.csproj": {}
+  },
+  "projects": {
+    "/Users/jersson/Projects/bookeat/Proyecto_net/Proyecto_net/Proyecto_net.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jersson/Projects/bookeat/Proyecto_net/Proyecto_net/Proyecto_net.csproj",
+        "projectName": "Proyecto_net",
+        "projectPath": "/Users/jersson/Projects/bookeat/Proyecto_net/Proyecto_net/Proyecto_net.csproj",
+        "packagesPath": "/Users/jersson/.nuget/packages/",
+        "outputPath": "/Users/jersson/Projects/bookeat/Proyecto_net/Proyecto_net/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/jersson/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.Extensions.Logging.Debug": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.Owin": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Microsoft.Owin.Security.Cookies": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Microsoft.Owin.Security.Google": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Microsoft.Owin.Security.OAuth": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Owin": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Owin.Security.Providers.LinkedIn": {
+              "target": "Package",
+              "version": "[2.26.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,136 @@
+﻿<!--MODAL FECHA-->
+<div class="modal fade" id="reservar-modal-fecha" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content form-elegant">
+            <div class="modal-header">
+                <a class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </a>
+            </div>
+            <div class="modal-body text-center">
+                <span class="titulo-modal">Selecciona una fecha</span>
+                <div class="mx-auto datepick" id="datepicker"></div>
+                <button type="button" class="btn btn-modal" id="reservar-fecha-siguiente">Continuar</button>
+            </div>                                          
+        </div>
+    </div>
+</div>
+<!--MODAL FECHA-->
+<!--MODAL HORA-->
+<div class="modal fade" id="reservar-modal-hora" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content form-elegant">
+            <div class="modal-header">
+                <a class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </a>
+            </div>
+            <div class="modal-body text-center">
+                <span class="titulo-modal">Selecciona una hora</span>
+                <div class="mb-4 mt-5 modal-hora">
+                    <select class="browser-default custom-select" id="seleccionarHora">
+                        @foreach (string a in ViewBag.listadoHoras)
+                        {
+                            <option value="@a">@a</option>
+                        }
+                    </select>
+                </div>
+                <button type="button" class="btn btn-modal" id="reservar-hora-siguiente">Continuar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--MODAL HORA-->
+<!--MODAL PEDIDO-->
+<div class="modal fade" id="reservar-modal-pedido" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content form-elegant">
+            <div class="modal-header">
+                <a class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </a>
+            </div>
+            <div class="modal-body mx-4">
+                <span class="titulo-modal">Selecciona productos</span>
+                <div class="md-form mb-5">
+                </div>
+                <select class="custom-select" id="seleccionarMenu">
+                    @foreach (var a in ViewBag.menu)
+                    {
+                        <option id="optionMenu" value="@a.Idproducto">@a.Nombre</option>
+                    }
+                </select>
+                <input type="number" name="quantity" min="1" max="5" id="cantidad" value="1">
+                <input type="checkbox" id="takeaway" />
+                <div class="text-center mb-3">
+                    <button type="button" class="btn btn-modal" id="reservar-pedido-siguiente">Continuar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--MODAL HORA-->
+<!--MODAL MESA-->
+<div class="modal fade" id="reservar-modal-mesa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <h4 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="text"><strong>Selecciona una mesa</strong></h4>
+        <div class="modal-content form-elegant">
+            <div class="modal-header">
+                <a class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </a>
+            </div>
+            <div class="modal-body mx-4">
+                <div class="md-form mb-5">
+                </div>
+                <select class="browser-default custom-select" id="seleccionarMesa">
+                </select>
+                <div class="text-center mb-3">
+                    <button type="button" class="btn yellow-gradient btn-block btn-rounded z-depth-1a" id="reservar-mesa-siguiente">Continuar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="reservar-modal-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <h4 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="text"><strong>Incia sesión</strong></h4>
+        <div class="modal-content form-elegant">
+            <div class="modal-header text-center">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">x</button>
+            </div>
+            <div class="modal-body mx-4">
+                <div class="md-form mb-5">
+                    Email<input type="email" id="reservar-loginform-email" class="form-control validate">
+                </div>
+                <div class="md-form mb-5">
+                    Password<input type="password" id="reservar-loginform-password" class="form-control validate">
+                </div>
+                <div class="text-center mb-3">
+                    <button type="button" class="btn yellow-gradient btn-block btn-rounded z-depth-1a" id="reservar-login-anterior">Anterior</button>
+                    <button type="button" class="btn yellow-gradient btn-block btn-rounded z-depth-1a" id="reservar-login-siguiente">Continuar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="reservar-modal-confirmar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <h4 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="text"><strong>Confirmar reserva</strong></h4>
+        <div class="modal-content form-elegant">
+            <div class="modal-header text-center">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">x</button>
+            </div>
+            <div class="modal-body mx-4">
+                <div class="md-form mb-5">
+                </div>
+                <div class="text-center mb-3">
+                    <button type="button" class="btn yellow-gradient btn-block btn-rounded z-depth-1a" id="reservar-confirmar-anterior">Anterior</button>
+                    <button type="button" class="btn yellow-gradient btn-block btn-rounded z-depth-1a" id="reservar-confirmar">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
