@@ -17,7 +17,7 @@ namespace Proyecto_net.Controllers
         {
             _context = context;
         }
-
+        /*
         public IActionResult comprobarEmailExistente(string email)
         {
             if (email == null) { return NotFound(); }
@@ -27,7 +27,7 @@ namespace Proyecto_net.Controllers
             }
             return Json(correo);
         }
-
+        */
 
         public IActionResult login(string email, string password)
         { 

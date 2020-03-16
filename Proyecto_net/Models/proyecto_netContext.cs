@@ -31,7 +31,7 @@ namespace Proyecto_net.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server = tcp:bookeat.database.windows.net, 1433; Initial Catalog = bdscrapper; Persist Security Info = False; User ID = bookeatAdminUser; Password ={ your_password}; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;");
+                optionsBuilder.UseSqlServer("Server = ITE-JMANRIQUE\\SQLEXPRESS; Database = proyecto_net; Trusted_Connetion=True;");
             }
         }
 
